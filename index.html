@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noharm</title>
+    <title>No harm</title>
   </head>
   <body>
     <header class="mx-16 header my-10">
@@ -44,11 +44,17 @@
             >
           </li>
           <li class="nav-link flex">
-            <a
+            <button
               href=""
-              class="bg-grey-100 text-base py-[10px] px-[30px] rounded-3xl"
-              >Partners</a
+              class="bg-grey-100 text-base py-[10px] px-[30px] rounded-3xl flex items-center"
             >
+              <span class="mr-3">Marketplace</span>
+              <img
+                src="./src/assets/icons/arrow-down.svg"
+                alt=""
+                class="p-[10px] bg-white-50 rounded-xl"
+              />
+            </button>
           </li>
           <li class="nav-link flex">
             <a
@@ -60,7 +66,21 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="home-page">
+      <section class="welcome-section mx-16">
+        <div class="flex justify-between">
+          <div class="section-text max-w-[618px] text">
+            <h1 class="text-[56px] font-medium">
+              Connecting Climate Solutions and
+              <span class="text-brand-20">Making Change Possible</span>
+            </h1>
+          </div>
+          <div class="section-image bg-white-600 rounded-3xl">
+            <img src="./src/assets/img/Placeholder Image.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script type="module" src="/src/main.js"></script>
   </body>
