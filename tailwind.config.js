@@ -4,6 +4,9 @@ export default {
   darkMode: "class",
   theme: {
     extend: {},
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+    },
     colors: {
       grey: {
         50: "#fafafa",
