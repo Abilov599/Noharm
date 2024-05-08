@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,60 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>No harm</title>
   </head>
-  <body>
-    <header class="mx-16 header my-10">
-      <nav class="flex justify-between navigation">
+  <body class="font-poppins">
+    <header class="header mx-auto px-16 py-10">
+      <nav class="navigation flex justify-between">
         <ul class="nav-links flex gap-6">
           <li class="nav-link flex">
             <a
               href=""
-              class="bg-grey-100 active text-base py-[10px] px-[30px] rounded-3xl"
+              class="active rounded-3xl bg-grey-100 px-[30px] py-[10px] text-base"
               >Home</a
             >
           </li>
           <li class="nav-link flex">
             <a
               href=""
-              class="bg-grey-100 text-base py-[10px] px-[30px] rounded-3xl"
+              class="rounded-3xl bg-grey-100 px-[30px] py-[10px] text-base"
               >Partners</a
             >
           </li>
           <li class="nav-link flex">
             <a
               href=""
-              class="bg-grey-100 text-base py-[10px] px-[30px] rounded-3xl"
+              class="rounded-3xl bg-grey-100 px-[30px] py-[10px] text-base"
               >Our Approach</a
             >
           </li>
         </ul>
         <div class="logo">
-          <img src="./noharm-logo.svg" alt="" />
+          <a href="/"><img src="./noharm-logo.svg" alt="" /></a>
         </div>
         <ul class="nav-links flex gap-6">
           <li class="nav-link flex">
             <a
               href=""
-              class="bg-grey-100 text-base py-[10px] px-[30px] rounded-3xl"
+              class="rounded-3xl bg-grey-100 px-[30px] py-[10px] text-base"
               >Case Studies</a
             >
           </li>
           <li class="nav-link flex">
             <button
               href=""
-              class="bg-grey-100 text-base py-[10px] px-[30px] rounded-3xl flex items-center"
+              class="flex items-center rounded-3xl bg-grey-100 px-[30px] py-[10px] text-base"
             >
               <span class="mr-3">Marketplace</span>
               <img
                 src="./src/assets/icons/arrow-down.svg"
                 alt=""
-                class="p-[10px] bg-white-50 rounded-xl"
+                class="rounded-xl bg-white-50 p-[10px]"
               />
             </button>
           </li>
           <li class="nav-link flex">
             <a
               href=""
-              class="bg-grey-100 text-base py-[10px] px-[30px] rounded-3xl border-[1px]"
+              class="rounded-3xl border-[1px] px-[30px] py-[10px] text-base transition-all hover:bg-black-900 hover:text-white-50"
               >Register</a
             >
           </li>
@@ -67,16 +67,86 @@
       </nav>
     </header>
     <main class="home-page">
-      <section class="welcome-section mx-16">
+      <section class="welcome-section mx-auto px-16">
         <div class="flex justify-between">
-          <div class="section-text max-w-[618px] text">
-            <h1 class="text-[56px] font-medium">
+          <div
+            class="section-content flex max-w-[618px] flex-col justify-center gap-5"
+          >
+            <h1 class="text-[56px] font-medium leading-[67.2px]">
               Connecting Climate Solutions and
               <span class="text-brand-20">Making Change Possible</span>
             </h1>
+            <p class="text-xl leading-[30px]">
+              NoHarm is the first sustainable marketplace for digital products,
+              connecting solution-seekers with problem-solvers committed to
+              B-Corp and likeminded practices.
+            </p>
+            <div class="btn-group flex gap-4">
+              <button
+                class="group flex items-center rounded-3xl border-[1px] border-white-50 bg-black-900 px-[30px] py-[10px] text-white-50 transition-all"
+              >
+                Make a Change Today
+                <img
+                  src="./src/assets/icons/arrow-right.svg"
+                  class="ml-3 transition-transform group-hover:translate-x-2"
+                  alt=""
+                />
+              </button>
+              <button
+                class="group flex items-center rounded-3xl border-[1px] px-[30px] py-[10px] text-base transition-all"
+              >
+                Our Approach
+                <img
+                  src="./src/assets/icons/arrow-right-black.svg"
+                  class="ml-3 transition-transform group-hover:translate-x-2"
+                  alt=""
+                />
+              </button>
+            </div>
           </div>
-          <div class="section-image bg-white-600 rounded-3xl">
-            <img src="./src/assets/img/Placeholder Image.png" alt="" />
+          <div class="section-image relative rounded-3xl bg-white-600">
+            <img src="./src/assets/img/Placeholder Image.svg" alt="" />
+            <div class="our-team-card absolute bottom-4 right-6">
+              <div
+                class="our-team-card-bg relative min-h-[170px] min-w-[195px]"
+              >
+                <div
+                  class="float-end mr-[10px] rounded-full bg-white-100 p-[10px]"
+                >
+                  <img src="./src/assets/icons/arrow-top-right.svg" alt="" />
+                </div>
+                <img
+                  src="./src/assets/img/Vector 10.svg"
+                  alt="Background Image"
+                  class="our-team-card-bg-img absolute left-0 top-0 h-full w-full rounded-[25px] object-cover"
+                />
+                <div
+                  class="our-team-card-content absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 transform flex-col gap-2 px-4 py-6 text-left"
+                >
+                  <div class="team-members flex">
+                    <img
+                      src="./src/assets/img/Ellipse 38.png"
+                      alt="Team Member"
+                      class="team-member-img h-[50px] w-[50px] rounded-full"
+                    />
+                    <img
+                      src="./src/assets/img/Ellipse 36.png"
+                      alt="Team Member"
+                      class="team-member-img -ml-4 h-[50px] w-[50px] rounded-full"
+                    />
+                    <img
+                      src="./src/assets/img/Ellipse 38.png"
+                      alt="Team Member"
+                      class="team-member-img -ml-4 h-[50px] w-[50px] rounded-full"
+                    />
+                  </div>
+                  <p class="text-base font-semibold">Our Team</p>
+                  <p class="text-xs">
+                    We are here to help your project positive impact.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
