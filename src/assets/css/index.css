@@ -8,4 +8,8 @@
   .nav-link a.active {
     @apply bg-brand-10;
   }
+
+  .section-divider {
+    @apply h-[100px] w-full;
+  }
 }
