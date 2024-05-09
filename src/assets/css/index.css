@@ -12,4 +12,8 @@
   .section-divider {
     @apply h-[100px] w-full;
   }
+
+  .my-container {
+    @apply mx-auto max-w-screen-2xl px-16;
+  }
 }
