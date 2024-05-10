@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  body {
+    @apply bg-white-200 font-poppins;
+  }
+
   .nav-link a.active {
     @apply bg-brand-10;
   }
