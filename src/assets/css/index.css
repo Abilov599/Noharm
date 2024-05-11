@@ -4,20 +4,37 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
+@layer base {
   body {
     @apply bg-white-200 font-poppins;
   }
+}
 
+@layer components {
+  .section-divider {
+    @apply h-[100px] w-full;
+  }
+}
+
+@layer utilities {
   .nav-link a.active {
     @apply bg-brand-10;
   }
 
-  .section-divider {
-    @apply h-[100px] w-full;
-  }
-
   .my-container {
     @apply mx-auto max-w-screen-2xl px-16;
+  }
+
+  /* Form scroll syles */
+  #register-form::-webkit-scrollbar {
+    @apply w-[10px];
+  }
+
+  #register-form::-webkit-scrollbar-track {
+    @apply rounded-[30px] bg-white-600;
+  }
+
+  #register-form::-webkit-scrollbar-thumb {
+    @apply rounded-[30px] bg-white-700;
   }
 }

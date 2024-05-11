@@ -12,7 +12,7 @@
         <ul class="nav-links flex gap-6">
           <li class="nav-link flex">
             <a
-              href=""
+              href="/"
               class="active rounded-3xl bg-grey-100 px-[30px] py-[10px] text-base"
               >Home</a
             >
@@ -33,7 +33,7 @@
           </li>
         </ul>
         <div class="logo">
-          <a href="/"><img src="./noharm-logo.svg" alt="" /></a>
+          <a href="/"><img src="./noharm-logo.svg" alt="noharm-logo" /></a>
         </div>
         <ul class="nav-links flex gap-6">
           <li class="nav-link flex">
@@ -51,14 +51,14 @@
               <span class="mr-3">Marketplace</span>
               <img
                 src="./src/assets/icons/arrow-down.svg"
-                alt=""
+                alt="arrow-down"
                 class="rounded-xl bg-white-50 p-[10px]"
               />
             </button>
           </li>
           <li class="nav-link flex">
             <a
-              href=""
+              href="/register"
               class="rounded-3xl border-[1px] px-[30px] py-[10px] text-base transition-all hover:bg-black-900 hover:text-white-50"
               >Register</a
             >
@@ -66,6 +66,130 @@
         </ul>
       </nav>
     </header>
+    <main id="register-page">
+      <section id="register-section">
+        <div class="my-container flex justify-around gap-8">
+          <div class="section-content">
+            <div class="section-image relative mb-12">
+              <img
+                src="./src/assets/img/Group 84.png"
+                alt="noharm-logo"
+                class="absolute left-1/2 top-1/2 max-w-[140px] -translate-x-1/2 -translate-y-1/2 transform"
+              />
+              <img
+                src="./src/assets/img/pics.png"
+                alt="yard"
+                class="max-w-[550px]"
+              />
+            </div>
+            <div class="content-heading ml-3">
+              <p class="ml-6 text-[28px] font-medium leading-[42px]">
+                Driving Sustainable Solutions:
+              </p>
+              <p class="text-2xl font-medium leading-[36px]">
+                Your Input Matters for a
+                <span class="text-brand-20">cleaner world</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="section-form w-full max-w-[640px] rounded-[50px] border border-grey-600 bg-white-300 px-9 pb-5 pt-[62.5px]"
+          >
+            <form
+              action=""
+              class="flex max-h-[580px] flex-col gap-4 overflow-y-auto px-10"
+              id="register-form"
+            >
+              <div class="flex flex-col gap-2">
+                <label for="emailInput" class="text-black-700">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="emailInput"
+                  class="rounded-md border border-grey-400 px-4 py-[14px]"
+                  placeholder="Please enter your E-mail"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label
+                  for="companyNameInput"
+                  class="cursor-pointer text-black-700"
+                  >1. Company Name*</label
+                >
+                <input
+                  type="text"
+                  name="companyName"
+                  id="companyNameInput"
+                  class="rounded-md border border-grey-400 px-4 py-[14px]"
+                  placeholder="Please enter your Company Name"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label
+                  for="yearsInOperationInput"
+                  class="cursor-pointer text-black-700"
+                  >2. Years in operation*</label
+                >
+                <input
+                  type="number"
+                  name="yearsInOperation"
+                  id="yearsInOperationInput"
+                  class="rounded-md border border-grey-400 px-4 py-[14px]"
+                  placeholder="Please enter your Years in operation"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label
+                  for="companySizeInput"
+                  class="cursor-pointer text-black-700"
+                  >3. Company size (number of employees)*</label
+                >
+                <input
+                  type="number"
+                  name="companySize"
+                  id="companySizeInput"
+                  class="rounded-md border border-grey-400 px-4 py-[14px]"
+                  placeholder="Please enter your Company size"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label
+                  for="locationsOperateInInput"
+                  class="cursor-pointer text-black-700"
+                  >4. What locations do you operate in?*</label
+                >
+                <textarea
+                  type="text"
+                  name="locationsOperateIn"
+                  id="locationsOperateInInput"
+                  class="rounded-md border border-grey-400 px-4 py-[14px]"
+                  placeholder="Please enter in what locations do you operate in"
+                ></textarea>
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="industryInput" class="cursor-pointer text-black-700"
+                  >5. What main industries do you serve? Do you provide products
+                  to specific industries? Or see opportunity to serve industries
+                  you company has developed expertise in?*</label
+                >
+                <textarea
+                  type="text"
+                  name="industry"
+                  id="industryInput"
+                  class="rounded-md border border-grey-400 px-4 py-[14px]"
+                  placeholder="Please enter in what locations do you operate in"
+                ></textarea>
+              </div>
+              <button
+                class="mt-3 w-full rounded-[40px] bg-black-900 px-6 py-3 text-white-50"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
