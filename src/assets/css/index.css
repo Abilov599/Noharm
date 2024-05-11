@@ -8,6 +8,11 @@
   body {
     @apply bg-white-200 font-poppins;
   }
+
+  form input,
+  form textarea {
+    @apply outline-black-900;
+  }
 }
 
 @layer components {
