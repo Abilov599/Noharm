@@ -9,9 +9,11 @@
     @apply bg-white-200 font-poppins;
   }
 
-  form input,
-  form textarea {
+  form input {
     @apply outline-black-900;
+  }
+  form textarea {
+    @apply max-h-96 min-h-[100px] outline-black-900;
   }
 }
 
