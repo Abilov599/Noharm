@@ -8,12 +8,11 @@
   body {
     @apply bg-white-200 font-poppins;
   }
-
   form input {
-    @apply outline-black-900;
+    @apply outline-none;
   }
   form textarea {
-    @apply max-h-96 min-h-[100px] outline-black-900;
+    @apply min-h-[100px] outline-none;
   }
 }
 
@@ -47,7 +46,6 @@
 }
 
 /* Animated text */
-
 .animated-text {
   @apply overflow-hidden text-2xl leading-[40px];
 }
@@ -94,4 +92,14 @@
   95.96% {
     transform: translate3d(0, -25%, 0);
   }
+}
+
+/* Gradient border */
+.with-gradient-border * {
+  display: inherit;
+  border-radius: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  width: inherit;
+  max-width: inherit;
 }

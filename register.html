@@ -120,13 +120,17 @@
             >
               <div class="flex flex-col gap-2">
                 <label for="emailInput" class="text-black-700">E-mail</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="emailInput"
-                  class="rounded-md border border-grey-400 px-4 py-[14px]"
-                  placeholder="Please enter your E-mail"
-                />
+                <span
+                  class="with-gradient-border relative inline-block w-full rounded-md bg-grey-400 p-[1px] transition focus-within:bg-[linear-gradient(21deg,_#a000d8,_#00bd90)]"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    id="emailInput"
+                    class="px-4 py-[14px]"
+                    placeholder="Please enter your E-mail"
+                  />
+                </span>
               </div>
               <div class="flex flex-col gap-2">
                 <label
@@ -134,13 +138,17 @@
                   class="cursor-pointer text-black-700"
                   >1. Company Name*</label
                 >
-                <input
-                  type="text"
-                  name="companyName"
-                  id="companyNameInput"
-                  class="rounded-md border border-grey-400 px-4 py-[14px]"
-                  placeholder="Please enter your Company Name"
-                />
+                <span
+                  class="with-gradient-border relative inline-block w-full rounded-md bg-grey-400 p-[1px] transition focus-within:bg-[linear-gradient(21deg,_#a000d8,_#00bd90)]"
+                >
+                  <input
+                    type="text"
+                    name="companyName"
+                    id="companyNameInput"
+                    class="px-4 py-[14px]"
+                    placeholder="Please enter your Company Name"
+                  />
+                </span>
               </div>
               <div class="flex flex-col gap-2">
                 <label
@@ -148,13 +156,15 @@
                   class="cursor-pointer text-black-700"
                   >2. Years in operation*</label
                 >
-                <input
-                  type="number"
-                  name="yearsInOperation"
-                  id="yearsInOperationInput"
-                  class="rounded-md border border-grey-400 px-4 py-[14px]"
-                  placeholder="Please enter your Years in operation"
-                />
+                <span
+                  class="with-gradient-border relative inline-block w-full rounded-md bg-grey-400 p-[1px] transition focus-within:bg-[linear-gradient(21deg,_#a000d8,_#00bd90)]"
+                  ><input
+                    type="number"
+                    name="yearsInOperation"
+                    id="yearsInOperationInput"
+                    class="px-4 py-[14px]"
+                    placeholder="Please enter your Years in operation"
+                /></span>
               </div>
               <div class="flex flex-col gap-2">
                 <label
@@ -162,13 +172,16 @@
                   class="cursor-pointer text-black-700"
                   >3. Company size (number of employees)*</label
                 >
-                <input
-                  type="number"
-                  name="companySize"
-                  id="companySizeInput"
-                  class="rounded-md border border-grey-400 px-4 py-[14px]"
-                  placeholder="Please enter your Company size"
-                />
+                <span
+                  class="with-gradient-border relative inline-block w-full rounded-md bg-grey-400 p-[1px] transition focus-within:bg-[linear-gradient(21deg,_#a000d8,_#00bd90)]"
+                >
+                  <input
+                    type="number"
+                    name="companySize"
+                    id="companySizeInput"
+                    class="px-4 py-[14px]"
+                    placeholder="Please enter your Company size"
+                /></span>
               </div>
               <div class="flex flex-col gap-2">
                 <label
@@ -176,13 +189,17 @@
                   class="cursor-pointer text-black-700"
                   >4. What locations do you operate in?*</label
                 >
-                <textarea
-                  type="text"
-                  name="locationsOperateIn"
-                  id="locationsOperateInInput"
-                  class="rounded-md border border-grey-400 px-4 py-[14px]"
-                  placeholder="Please enter what locations do you operate in"
-                ></textarea>
+                <span
+                  class="with-gradient-border relative inline-block w-full rounded-md bg-grey-400 p-[1px] transition focus-within:bg-[linear-gradient(21deg,_#a000d8,_#00bd90)]"
+                >
+                  <textarea
+                    type="text"
+                    name="locationsOperateIn"
+                    id="locationsOperateInInput"
+                    class="px-4 py-[14px]"
+                    placeholder="Please enter what locations do you operate in"
+                  ></textarea>
+                </span>
               </div>
               <div class="flex flex-col gap-2">
                 <label for="industryInput" class="cursor-pointer text-black-700"
@@ -190,13 +207,17 @@
                   to specific industries? Or see opportunity to serve industries
                   you company has developed expertise in?*</label
                 >
-                <textarea
-                  type="text"
-                  name="industry"
-                  id="industryInput"
-                  class="rounded-md border border-grey-400 px-4 py-[14px]"
-                  placeholder="Please enter what main industries do you serve"
-                ></textarea>
+                <span
+                  class="with-gradient-border relative inline-block w-full rounded-md bg-grey-400 p-[1px] transition focus-within:bg-[linear-gradient(21deg,_#a000d8,_#00bd90)]"
+                >
+                  <textarea
+                    type="text"
+                    name="industry"
+                    id="industryInput"
+                    class="px-4 py-[14px]"
+                    placeholder="Please enter what main industries do you serve"
+                  ></textarea>
+                </span>
               </div>
               <div class="flex flex-col gap-2">
                 <fieldset class="flex flex-col gap-[10px]">
@@ -209,7 +230,7 @@
                       id="carbonCheckbox"
                       name="targetClimate"
                       value="Carbon - capture & storage, biochar, climate fintech, carbon tracking & offset, methane, etc."
-                      class="min-h-6 min-w-6 accent-black-900"
+                      class="min-h-6 min-w-6"
                     />
                     <label for="carbonCheckbox" class="text-black-700"
                       >Carbon - capture &amp; storage, biochar, climate fintech,
@@ -222,7 +243,7 @@
                       id="circularEconomyCheckbox"
                       name="targetClimate"
                       value="Circular Economy - waste to energy, food waste, fashion waste, supply chain management, regenerative materials, recycling technologies, sharing platform, etc"
-                      class="min-h-6 min-w-6 accent-black-900"
+                      class="min-h-6 min-w-6"
                     />
                     <label for="circularEconomyCheckbox" class="text-black-700"
                       >Circular Economy - waste to energy, food waste, fashion
@@ -236,7 +257,7 @@
                       id="energyTransitionCheckbox"
                       name="targetClimate"
                       value="Energy Transition - energy efficiency & storage, wind, solar, nuclear energy, hydrogen, etc."
-                      class="min-h-6 min-w-6 accent-black-900"
+                      class="min-h-6 min-w-6"
                     />
                     <label for="energyTransitionCheckbox" class="text-black-700"
                       >Energy Transition - energy efficiency &amp; storage,
@@ -249,7 +270,7 @@
                       id="farmingAndFoodProductionCheckbox"
                       name="targetClimate"
                       value="Farming & Food Production - precision, vertical, regenerative farming, sustainable fertilizer, precision fermentation, etc."
-                      class="min-h-6 min-w-6 accent-black-900"
+                      class="min-h-6 min-w-6"
                     />
                     <label
                       for="farmingAndFoodProductionCheckbox"
@@ -267,7 +288,7 @@
                       value="Built Environment - advanced materials, smart & green
                       buildings, smart grid, sustainable HVAC, building
                       retrofit, etc."
-                      class="min-h-6 min-w-6 accent-black-900"
+                      class="min-h-6 min-w-6"
                     />
                     <label for="builtEnvironmentCheckbox" class="text-black-700"
                       >Built Environment - advanced materials, smart &amp; green
@@ -282,7 +303,7 @@
                       name="targetClimate"
                       value="Mobility - electric vehicles, batteries, ev charging,
                       biofuels, etc."
-                      class="min-h-6 min-w-6 accent-black-900"
+                      class="min-h-6 min-w-6"
                     />
                     <label for="mobilityCheckbox" class="text-black-700"
                       >Mobility - electric vehicles, batteries, ev charging,
@@ -301,13 +322,17 @@
                   Assessments, Benchmarking, GHG Baselines, Target Setting,
                   Reporting Frameworks, Clarity of Tool, Use Cases, etc.)</label
                 >
-                <textarea
-                  type="text"
-                  name="climateGaps"
-                  id="climateGapsInput"
-                  class="rounded-md border border-grey-400 px-4 py-[14px]"
-                  placeholder="Please enter what are the biggest gaps you see in your climate tech practice"
-                ></textarea>
+                <span
+                  class="with-gradient-border relative inline-block w-full rounded-md bg-grey-400 p-[1px] transition focus-within:bg-[linear-gradient(21deg,_#a000d8,_#00bd90)]"
+                >
+                  <textarea
+                    type="text"
+                    name="climateGaps"
+                    id="climateGapsInput"
+                    class="px-4 py-[14px]"
+                    placeholder="Please enter what are the biggest gaps you see in your climate tech practice"
+                  ></textarea>
+                </span>
               </div>
               <div class="flex flex-col gap-2">
                 <label
@@ -316,13 +341,17 @@
                   >8. What is your biggest strength within your Product(s)
                   offering?*</label
                 >
-                <textarea
-                  type="text"
-                  name="productOfferingStrength"
-                  id="productOfferingStrengthInput"
-                  class="rounded-md border border-grey-400 px-4 py-[14px]"
-                  placeholder="Please enter what is your biggest strength within your Product(s) offering"
-                ></textarea>
+                <span
+                  class="with-gradient-border relative inline-block w-full rounded-md bg-grey-400 p-[1px] transition focus-within:bg-[linear-gradient(21deg,_#a000d8,_#00bd90)]"
+                >
+                  <textarea
+                    type="text"
+                    name="productOfferingStrength"
+                    id="productOfferingStrengthInput"
+                    class="px-4 py-[14px]"
+                    placeholder="Please enter what is your biggest strength within your Product(s) offering"
+                  ></textarea>
+                </span>
               </div>
               <div class="flex flex-col gap-2">
                 <fieldset class="flex flex-col gap-[10px]">
@@ -337,7 +366,7 @@
                       type="radio"
                       name="IsEsgEmbedded"
                       value="Strongly Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Disagree</label
                   >
@@ -348,7 +377,7 @@
                       type="radio"
                       name="IsEsgEmbedded"
                       value="Somewhat Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Somewhat Disagree</label
                   >
@@ -359,7 +388,7 @@
                       type="radio"
                       name="IsEsgEmbedded"
                       value="Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Agree</label
                   >
@@ -370,7 +399,7 @@
                       type="radio"
                       name="IsEsgEmbedded"
                       value="Strongly Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Agree</label
                   >
@@ -392,7 +421,7 @@
                       type="radio"
                       name="governanceStructure"
                       value="Strongly Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Disagree</label
                   >
@@ -403,7 +432,7 @@
                       type="radio"
                       name="governanceStructure"
                       value="Somewhat Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Somewhat Disagree</label
                   >
@@ -414,7 +443,7 @@
                       type="radio"
                       name="governanceStructure"
                       value="Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Agree</label
                   >
@@ -425,7 +454,7 @@
                       type="radio"
                       name="governanceStructure"
                       value="Strongly Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Agree</label
                   >
@@ -445,7 +474,7 @@
                       type="radio"
                       name="isTailored"
                       value="Strongly Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Disagree</label
                   >
@@ -456,7 +485,7 @@
                       type="radio"
                       name="isTailored"
                       value="Somewhat Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Somewhat Disagree</label
                   >
@@ -467,7 +496,7 @@
                       type="radio"
                       name="isTailored"
                       value="Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Agree</label
                   >
@@ -478,7 +507,7 @@
                       type="radio"
                       name="isTailored"
                       value="Strongly Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Agree</label
                   >
@@ -499,7 +528,7 @@
                       type="radio"
                       name="isClearUnderstanding"
                       value="Strongly Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Disagree</label
                   >
@@ -510,7 +539,7 @@
                       type="radio"
                       name="isClearUnderstanding"
                       value="Somewhat Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Somewhat Disagree</label
                   >
@@ -521,7 +550,7 @@
                       type="radio"
                       name="isClearUnderstanding"
                       value="Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Agree</label
                   >
@@ -532,7 +561,7 @@
                       type="radio"
                       name="isClearUnderstanding"
                       value="Strongly Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Agree</label
                   >
@@ -552,7 +581,7 @@
                       type="radio"
                       name="isMultipleExternalMarketingMediums"
                       value="Strongly Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Disagree</label
                   >
@@ -563,7 +592,7 @@
                       type="radio"
                       name="isMultipleExternalMarketingMediums"
                       value="Somewhat Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Somewhat Disagree</label
                   >
@@ -574,7 +603,7 @@
                       type="radio"
                       name="isMultipleExternalMarketingMediums"
                       value="Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Agree</label
                   >
@@ -585,7 +614,7 @@
                       type="radio"
                       name="isMultipleExternalMarketingMediums"
                       value="Strongly Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Agree</label
                   >
@@ -604,7 +633,7 @@
                       type="radio"
                       name="isMultiChannelMarketingStrategy"
                       value="Strongly Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Disagree</label
                   >
@@ -615,7 +644,7 @@
                       type="radio"
                       name="isMultiChannelMarketingStrategy"
                       value="Somewhat Disagree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Somewhat Disagree</label
                   >
@@ -626,7 +655,7 @@
                       type="radio"
                       name="isMultiChannelMarketingStrategy"
                       value="Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Agree</label
                   >
@@ -637,7 +666,7 @@
                       type="radio"
                       name="isMultiChannelMarketingStrategy"
                       value="Strongly Agree"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strongly Agree</label
                   >
@@ -657,7 +686,7 @@
                       type="radio"
                       name="robustness"
                       value="Limited"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Limited</label
                   >
@@ -668,7 +697,7 @@
                       type="radio"
                       name="robustness"
                       value="Adequate, but large amounts of opportunity for improvement"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Adequate, but large amounts of opportunity for improvement
                   </label>
@@ -679,7 +708,7 @@
                       type="radio"
                       name="robustness"
                       value="Strong, with improvement opportunities in specific facets"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Strong, with improvement opportunities in specific
                     facets</label
@@ -691,7 +720,7 @@
                       type="radio"
                       name="robustness"
                       value="Completely dialed-in"
-                      class="h-6 w-6 cursor-pointer accent-black-900"
+                      class="h-6 w-6 cursor-pointer"
                     />
                     Completely dialed-in</label
                   >
