@@ -14,6 +14,13 @@
   form textarea {
     @apply min-h-[100px] outline-none;
   }
+
+  form input[type="checkbox"] {
+    @apply accent-primary-main;
+  }
+  form input[type="radio"] {
+    @apply accent-primary-main;
+  }
 }
 
 @layer components {
