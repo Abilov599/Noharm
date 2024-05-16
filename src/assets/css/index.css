@@ -117,7 +117,7 @@
   animation-timeline: view();
 }
 .fadeInLeft {
-  animation: fadeInLeft 1s both;
+  animation: fadeInLeft 0.8s both;
 }
 
 @keyframes fadeInLeftInView {
@@ -148,7 +148,7 @@
 }
 
 .fadeInRight {
-  animation: fadeInRight 1s both;
+  animation: fadeInRight 0.8s both;
 }
 
 @keyframes fadeInRightInView {
@@ -194,7 +194,7 @@
 }
 
 .fadeInDown {
-  animation: fadeInDown 1s both;
+  animation: fadeInDown 0.8s both;
 }
 
 @keyframes fadeInDownInView {
