@@ -8,7 +8,7 @@
     <title>No harm</title>
   </head>
   <body>
-    <header id="header" class="py-10">
+    <header id="header" class="fadeInDown py-10">
       <nav class="navigation my-container flex justify-between">
         <ul class="nav-links flex gap-6">
           <li class="nav-link flex">
@@ -71,7 +71,7 @@
       <section id="welcome-section">
         <div class="my-container flex justify-between">
           <div
-            class="section-content flex max-w-[618px] flex-col justify-center gap-5"
+            class="section-content fadeInLeft flex max-w-[618px] flex-col justify-center gap-5"
           >
             <h1 class="text-[56px] font-medium leading-[67.2px]">
               Connecting Climate Solutions and
@@ -105,7 +105,9 @@
               </button>
             </div>
           </div>
-          <div class="section-image relative rounded-3xl bg-white-600">
+          <div
+            class="section-image fadeInRight relative rounded-3xl bg-white-600"
+          >
             <img src="./src/assets/img/Placeholder Image.svg" alt="Cube" />
             <div class="our-team-card absolute bottom-4 right-6">
               <div
@@ -261,9 +263,43 @@
               decisions and stay ahead of the curve.
             </p>
           </div>
-          <div class="section-content flex gap-8"></div>
+          <div class="section-content flex gap-8">
+            <div class="card-group flex flex-col gap-8">
+              <div
+                class="card-group-card fadeInLeftInView h-[553px] w-[416px] rounded-3xl border border-white-700 bg-center bg-no-repeat"
+                style="
+                  background: url(/src/assets/img/stats-bg.jpeg) center/cover;
+                "
+              ></div>
+            </div>
+            <div class="card-group flex flex-col gap-8">
+              <div
+                class="card-group-card fadeInDownInView h-[277px] w-[416px] rounded-3xl border border-white-700 bg-center bg-no-repeat"
+                style="
+                  background: url(/src/assets/img/Placeholder\ Image\ copy.png)
+                    center/cover;
+                "
+              ></div>
+              <div
+                class="card-group-card fadeInUpInView h-[244px] w-[416px] rounded-3xl border border-white-700"
+              ></div>
+            </div>
+            <div class="card-group flex flex-col gap-8">
+              <div
+                class="card-group-card fadeInRightInView h-[244px] w-[416px] rounded-3xl border border-white-700"
+              ></div>
+              <div
+                class="card-group-card fadeInRightEarlyInView h-[277px] w-[416px] rounded-3xl border border-white-700 bg-center bg-no-repeat"
+                style="
+                  background: url(/src/assets/img/Placeholder\ Image.png)
+                    center/cover;
+                "
+              ></div>
+            </div>
+          </div>
         </div>
       </section>
+      <div class="section-divider"></div>
       <div class="section-divider"></div>
     </main>
     <footer></footer>
