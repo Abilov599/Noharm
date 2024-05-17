@@ -112,6 +112,21 @@
 }
 
 /* Fade animations */
+
+.fadeInInView {
+  animation-name: fadeInInView;
+  animation-timeline: view();
+}
+
+@keyframes fadeInInView {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+
 .fadeInLeftInView {
   animation: fadeInLeftInView;
   animation-timeline: view();
@@ -143,7 +158,7 @@
 }
 
 .fadeInRightInView {
-  animation: fadeInRightInView();
+  animation: fadeInRightInView;
   animation-timeline: view();
 }
 
