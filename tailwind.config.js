@@ -74,6 +74,9 @@ export default {
       brand: {
         10: "#BFE5B1",
         20: "#589E3F",
+        30: "#A7DCB5",
+        40: "#D0A6EE",
+        50: "#9C98FD",
         60: "#73B55A",
       },
     },
