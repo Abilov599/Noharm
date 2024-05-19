@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/assets/css/index.css" />
+    <meta name="csrf-token" content="" />
     <title>Register | No harm</title>
   </head>
   <body>
@@ -110,10 +111,12 @@
             class="section-form fadeInRight w-full max-w-[645px] rounded-[50px] border border-grey-600 bg-white-300 px-9 pb-5 pt-[62.5px]"
           >
             <form
-              action=""
+              action="/register"
+              method="post"
               class="flex max-h-[580px] flex-col gap-1 overflow-y-auto px-10"
               id="register-form"
             >
+              <input type="hidden" name="_token" value="" />
               <div class="flex flex-col gap-2">
                 <label for="emailInput" class="text-black-700">E-mail</label>
                 <span
@@ -242,7 +245,7 @@
                     <input
                       type="checkbox"
                       id="carbonCheckbox"
-                      name="targetClimate"
+                      name="targetClimate[]"
                       value="Carbon - capture & storage, biochar, climate fintech, carbon tracking & offset, methane, etc."
                       class="min-h-6 min-w-6"
                     />
@@ -781,6 +784,19 @@
         </div>
       </section>
     </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the csrf-token meta tag content
+        const csrfToken = document
+          .querySelector('meta[name="csrf-token"]')
+          .getAttribute("content");
+
+        // Set the value of the _token input field
+        const tokenInput = document.querySelector('input[name="_token"]');
+        tokenInput.value = csrfToken;
+      });
+    </script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
