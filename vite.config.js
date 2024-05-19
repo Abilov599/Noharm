@@ -43,7 +43,7 @@ function findHTMLFiles() {
   return entryPoints;
 }
 
-// Custom plugin to replace paths
+// Custom plugin to replace paths inside file content
 function replacePathsPlugin() {
   return {
     name: "replace-paths",
@@ -54,10 +54,13 @@ function replacePathsPlugin() {
         if (chunk.type === "asset" || chunk.type === "chunk") {
           if (chunk.source) {
             let content = chunk.source.toString();
-            content = content
-              .replace(/\/assets\//g, "/dist/assets/")
-              .replace(/main\.js/g, "dist/main.js")
-              .replace(/main\.css/g, "dist/main.css");
+            // Replace all occurrences of /assets/ with /dist/assets/
+            content = content.replace(/\/assets\//g, "/dist/assets/");
+            // Replace all occurrences of /filename.ext with /dist/filename.ext
+            content = content.replace(
+              /\/([a-zA-Z0-9-_]+\.[a-zA-Z0-9]+)/g,
+              "/dist/$1",
+            );
             chunk.source = content;
           }
         }
