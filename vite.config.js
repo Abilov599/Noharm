@@ -10,12 +10,9 @@ export default defineConfig({
     rollupOptions: {
       input: findHTMLFiles(),
       output: {
-        entryFileNames: "[name].js",
-        chunkFileNames: "[name].js",
+        entryFileNames: "assets/[name].js", // JavaScript files in assets folder
+        chunkFileNames: "assets/[name].js", // Chunk files in assets folder
         assetFileNames: (assetInfo) => {
-          if (/\.(css)$/.test(assetInfo.name)) {
-            return "[name][extname]";
-          }
           if (/\.(png|jpe?g|svg|gif|tiff|bmp|ico|webp)$/.test(assetInfo.name)) {
             return "assets/images/[name][extname]";
           }
@@ -56,11 +53,6 @@ function replacePathsPlugin() {
             let content = chunk.source.toString();
             // Replace all occurrences of /assets/ with /dist/assets/
             content = content.replace(/\/assets\//g, "/dist/assets/");
-            // Replace all occurrences of /filename.ext with /dist/filename.ext
-            content = content.replace(
-              /\/([a-zA-Z0-9-_]+\.[a-zA-Z0-9]+)/g,
-              "/dist/$1",
-            );
             chunk.source = content;
           }
         }
