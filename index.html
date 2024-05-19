@@ -234,7 +234,12 @@
             Join us in sculpting <span class="text-brand-20">green</span> and
             <span class="text-brand-20">sustainable</span> world
           </h3>
-          <form action="" class="flex justify-center gap-[10px]">
+          <form
+            action="/subscribe"
+            method="post"
+            class="flex justify-center gap-[10px]"
+          >
+            <input type="hidden" name="_token" value="" />
             <input
               type="email"
               placeholder="Enter your email"

@@ -5,7 +5,6 @@
     <link rel="icon" type="image/x-icon" href="/src/assets/icons/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/assets/css/index.css" />
-    <meta name="csrf-token" content="" />
     <title>Register | No harm</title>
   </head>
   <body>
@@ -783,19 +782,6 @@
         </div>
       </section>
     </main>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Get the csrf-token meta tag content
-        const csrfToken = document
-          .querySelector('meta[name="csrf-token"]')
-          .getAttribute("content");
-
-        // Set the value of the _token input field
-        const tokenInput = document.querySelector('input[name="_token"]');
-        tokenInput.value = csrfToken;
-      });
-    </script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
