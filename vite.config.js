@@ -4,7 +4,7 @@ import { resolve } from "path";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default defineConfig({
-  plugins: [ViteImageOptimizer()],
+  plugins: [ViteImageOptimizer(), replacePathsPlugin()],
   build: {
     assetsInlineLimit: 0,
     rollupOptions: {
@@ -12,7 +12,15 @@ export default defineConfig({
       output: {
         entryFileNames: "[name].js",
         chunkFileNames: "[name].js",
-        assetFileNames: "assets/[name][extname]",
+        assetFileNames: (assetInfo) => {
+          if (/\.(css)$/.test(assetInfo.name)) {
+            return "[name][extname]";
+          }
+          if (/\.(png|jpe?g|svg|gif|tiff|bmp|ico|webp)$/.test(assetInfo.name)) {
+            return "assets/images/[name][extname]";
+          }
+          return "assets/[name][extname]";
+        },
       },
     },
   },
@@ -33,4 +41,27 @@ function findHTMLFiles() {
   });
 
   return entryPoints;
+}
+
+// Custom plugin to replace paths
+function replacePathsPlugin() {
+  return {
+    name: "replace-paths",
+    enforce: "post",
+    generateBundle(options, bundle) {
+      Object.keys(bundle).forEach((fileName) => {
+        const chunk = bundle[fileName];
+        if (chunk.type === "asset" || chunk.type === "chunk") {
+          if (chunk.source) {
+            let content = chunk.source.toString();
+            content = content
+              .replace(/\/assets\//g, "/dist/assets/")
+              .replace(/main\.js/g, "dist/main.js")
+              .replace(/main\.css/g, "dist/main.css");
+            chunk.source = content;
+          }
+        }
+      });
+    },
+  };
 }
