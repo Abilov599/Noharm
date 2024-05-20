@@ -1,14 +1,12 @@
 import { defineConfig } from "vite";
-import { readdirSync } from "fs";
-import { resolve } from "path";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import mpaPlugin from "vite-plugin-mpa-support";
 
 export default defineConfig({
-  plugins: [ViteImageOptimizer(), replacePathsPlugin()],
+  plugins: [ViteImageOptimizer(), replacePathsPlugin(), mpaPlugin()],
   build: {
     assetsInlineLimit: 0,
     rollupOptions: {
-      input: findHTMLFiles(),
       output: {
         entryFileNames: "assets/[name].js", // JavaScript files in assets folder
         chunkFileNames: "assets/[name].js", // Chunk files in assets folder
@@ -22,23 +20,6 @@ export default defineConfig({
     },
   },
 });
-
-// Function to find all HTML files in the project directory
-function findHTMLFiles() {
-  const directory = "./"; // Directory where HTML files are located
-  const htmlFiles = readdirSync(directory).filter((file) =>
-    file.endsWith(".html"),
-  );
-
-  // Generate entry points object
-  const entryPoints = {};
-  htmlFiles.forEach((file) => {
-    const name = file.replace(".html", "");
-    entryPoints[name] = resolve(__dirname, `${directory}/${file}`);
-  });
-
-  return entryPoints;
-}
 
 function replacePathsPlugin() {
   return {
